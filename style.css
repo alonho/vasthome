@@ -1,36 +1,25 @@
-body {
-    background-image: url(earth.jpg);
-    background-position-x: center;
-    background-position-y: top;
-    background-position: center top;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: 'Open Sans', sans-serif;
-}
+body {padding:0px;margin:0px;overflow:hidden;background-color:#161c1f;}
 
-.title {
-    font-family: 'Ubuntu', sans-serif;
-}
+.contentwrap {z-index:3;position:absolute;left:0px;top:0px;width:100%;height:100%;display:table;}
+.logowrap {position:relative;display:table-cell;text-align:center;vertical-align:middle;padding:40px;}
 
-.content {
-    margin-top: 100px;
-    padding-top: 15px;
-    padding-bottom: 40px;
-    background-color: rgba(224, 224, 224, 0.3);
-    border-radius: 5px;
-}
+.vast_logo {z-index:5;position:relative;margin-left:auto;margin-right:auto;max-width:325px;max-height:210px;width:100%;height:auto;}
 
-.content h1 {
-    font-size: 300%;
-}
+.icon_links_wrap {text-align:center;padding-top:70px;}
 
-.link {
-    font-size: 120%;
-}
+a.icon_link, a.icon_link * {-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+a.icon_link {display:inline-block;position:relative;border:2px solid #649b8c;border-radius:4px;z-index:6;padding:10px;width:24px;height:24px;margin-right:5px;margin-left:5px;}
+a.icon_link:hover {border:2px solid #ffffff;}
+.icon_link .svg_wrap {position:absolute;}
+
+a.icon_link .cls-1 {fill:#649b8c;fill-rule:evenodd;}
+a.icon_link:hover .cls-1 {fill:#ffffff;}
+
+a.icon_link.email .svg_wrap {top:12px;}
+a.icon_link.twitter .svg_wrap {top:12px;}
+a.icon_link.linkedin .svg_wrap {top:8px;}
+
+.panowrap {position:fixed;top:0px;left:0px;width:100%;min-height:500px;height:100%;z-index:2;}
+.panowrap .frame {width:100%;height:100%;background: url('images/vast_bg.jpg');background-size:auto 100%;}
+
+.clearboth {clear:both;}
