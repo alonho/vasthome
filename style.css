@@ -1,11 +1,35 @@
-body {padding:0px;margin:0px;overflow:hidden;background-color:#161c1f;}
+body {padding:0px;margin:0px;overflow:hidden;background-color:#0c1b23;}
 
-.contentwrap {z-index:3;position:absolute;left:0px;top:0px;width:100%;height:100%;display:table;}
-.logowrap {position:relative;display:table-cell;text-align:center;vertical-align:middle;padding:40px;}
+* {font-family: 'Lato', sans-serif;font-weight:400;}
+.contentwrap {z-index:3;position:absolute;left:0px;top:0px;width:100%;height:100%;background-image:url(images/vast_logo_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center center;}
 
-.vast_logo {z-index:5;position:relative;margin-left:auto;margin-right:auto;max-width:325px;max-height:210px;width:100%;height:auto;}
 
-.icon_links_wrap {text-align:center;padding-top:70px;}
+.logo_wrap {position:absolute;bottom:0px;left:0px;width:100%;text-align:center;height:180px;
+background: transparent;
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%);
+
+}
+.logo_wrap .container {display:inline-block;position:relative;height:50px;top:65px;}
+.vast_logo {z-index:5;position:absolute;left:0px;top:0px;width:210px;height:50px;}
+.vast_blurb {z-index:5;position:relative;padding:5px 10px 5px 240px;color:#ffffff;text-transform:uppercase;font-size:16px;line-height:20px;letter-spacing:2px;text-align:left;opacity:0.5;}
+
+
+@media (max-width: 920px) {
+	.logo_wrap {height:250px;}
+	.logo_wrap .container {}
+	.vast_logo {position:relative;margin-left:auto;margin-right:auto;}
+	.vast_blurb {text-align:center;padding:10px;}
+	
+}
+
+@media (max-width: 500px) {
+	.vast_blurb br {display:none;}
+}
+
+
+.icon_links_wrap {position:absolute;right:15px;top:20px;}
 
 a.icon_link, a.icon_link * {-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 a.icon_link {display:inline-block;position:relative;border:2px solid #649b8c;border-radius:4px;z-index:6;padding:10px;width:24px;height:24px;margin-right:5px;margin-left:5px;}
@@ -18,8 +42,5 @@ a.icon_link:hover .cls-1 {fill:#ffffff;}
 a.icon_link.email .svg_wrap {top:12px;}
 a.icon_link.twitter .svg_wrap {top:12px;}
 a.icon_link.linkedin .svg_wrap {top:8px;}
-
-.panowrap {position:fixed;top:0px;left:0px;width:100%;min-height:500px;height:100%;z-index:2;}
-.panowrap .frame {width:100%;height:100%;background: url('images/vast_bg.jpg');background-size:auto 100%;}
 
 .clearboth {clear:both;}
