@@ -14,6 +14,7 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%);
 .logo_wrap .container {display:inline-block;position:relative;height:50px;top:65px;}
 .vast_logo {z-index:5;position:absolute;left:0px;top:0px;width:210px;height:50px;}
 .vast_blurb {z-index:5;position:relative;padding:5px 10px 5px 240px;color:#ffffff;text-transform:uppercase;font-size:16px;line-height:20px;letter-spacing:2px;text-align:left;opacity:0.5;}
+.vast_small {z-index:5;position:relative;color:#ffffff;font-size:12px;line-height:16px;letter-spacing:2px;text-align:center;opacity:0.3;margin-top:20px;padding-top:10px;}
 
 
 @media (max-width: 920px) {
@@ -21,6 +22,7 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%);
 	.logo_wrap .container {}
 	.vast_logo {position:relative;margin-left:auto;margin-right:auto;}
 	.vast_blurb {text-align:center;padding:10px;}
+	.vast_small {margin-top:0px;}
 	
 }
 
