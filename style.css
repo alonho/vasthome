@@ -44,5 +44,6 @@ a.icon_link:hover .cls-1 {fill:#ffffff;}
 a.icon_link.email .svg_wrap {top:12px;}
 a.icon_link.twitter .svg_wrap {top:12px;}
 a.icon_link.linkedin .svg_wrap {top:8px;}
+a.icon_link.crunchbase .svg_wrap {top:9px;left:9px;}
 
 .clearboth {clear:both;}
