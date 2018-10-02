@@ -51,9 +51,9 @@ strong {font-weight:600;}
 
 /* generic_contentwrap */
 .generic_page {}
-.generic_page .contentwrap {overflow:auto;}
+.generic_page .contentwrap {overflow:auto;background-image:none;}
 .generic_page .logo_wrap {bottom:auto;top:0px;background:transparent;}
 
-.generic_page .longtextwrap {background-color:#ffffff;position:relative;top:190px;}
+.generic_page .longtextwrap {background-color:#ffffff;position:relative;top:0px;}
 .generic_page .longtext {position:relative;color:#222222;font-size:16px;line-height:21px;width:100%;max-width:1180px;padding-top:15px;padding-bottom:50px;margin-left:auto;margin-right:auto;}
 .generic_page .longtext p {padding-left:15px;padding-right:15px;}
