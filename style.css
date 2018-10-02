@@ -1,6 +1,6 @@
-body {padding:0px;margin:0px;overflow:hidden;background-color:#0c1b23;}
+body {padding:0px;margin:0px;overflow:hidden;background-color:#0c1b23;font-weight:400;}
 
-* {font-family: 'Lato', sans-serif;font-weight:400;}
+* {font-family: 'Lato', sans-serif;}
 .contentwrap {z-index:3;position:absolute;left:0px;top:0px;width:100%;height:100%;background-image:url(images/vast_logo_bg.jpg);background-repeat:no-repeat;background-size:cover;background-position:center center;}
 
 
@@ -12,7 +12,7 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%);
 
 }
 .logo_wrap .container {display:inline-block;position:relative;height:50px;top:65px;}
-.vast_logo {z-index:5;position:absolute;left:0px;top:0px;width:210px;height:50px;}
+.vast_logo {display:block;z-index:6;position:absolute;left:0px;top:0px;width:210px;height:50px;}
 .vast_blurb {z-index:5;position:relative;padding:5px 10px 5px 240px;color:#ffffff;text-transform:uppercase;font-size:16px;line-height:20px;letter-spacing:2px;text-align:left;opacity:0.5;}
 .vast_small {z-index:5;position:relative;color:#ffffff;font-size:12px;line-height:16px;letter-spacing:2px;text-align:center;opacity:0.3;margin-top:20px;padding-top:10px;}
 
@@ -46,4 +46,14 @@ a.icon_link.twitter .svg_wrap {top:12px;}
 a.icon_link.linkedin .svg_wrap {top:8px;}
 a.icon_link.crunchbase .svg_wrap {top:9px;left:9px;}
 
+strong {font-weight:600;}
 .clearboth {clear:both;}
+
+/* generic_contentwrap */
+.generic_page {}
+.generic_page .contentwrap {overflow:auto;}
+.generic_page .logo_wrap {bottom:auto;top:0px;background:transparent;}
+
+.generic_page .longtextwrap {background-color:#ffffff;position:relative;top:190px;}
+.generic_page .longtext {position:relative;color:#222222;font-size:16px;line-height:21px;width:100%;max-width:1180px;padding-top:15px;padding-bottom:50px;margin-left:auto;margin-right:auto;}
+.generic_page .longtext p {padding-left:15px;padding-right:15px;}
